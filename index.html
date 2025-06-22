@@ -4,24 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoer Legal</title>
-
     <style>
       body {
         font-family: "Arial", sans-serif;
         margin: 40px auto;
-        max-width: 700px;
+        max-width: 800px;
         line-height: 1.6;
         color: #333;
         padding: 0 20px;
+        text-align: center;
       }
-      h1,
-      h2 {
+
+      h1 {
         color: #d35400;
+        margin-bottom: 10px;
       }
+
+      p {
+        margin-bottom: 40px;
+      }
+
       img {
-        max-width: 275px;
+        max-width: 350px;
         display: block;
         margin: 0 auto 30px;
+      }
+
+      .link-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .link-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .link-box a {
+        font-size: 18px;
+        color: #d35400;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .link-box span {
+        font-size: 12px;
+        color: #777;
+        margin-top: 4px;
+      }
+
+      .link-box a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -33,10 +71,16 @@
         Welcome to the official legal page of the Pomodoer app. Here you can
         find links to our most important documents:
       </p>
-      <ul>
-        <li><a href="privacy-policy-pomodoer.html">Privacy Policy</a></li>
-        <li><a href="terms-conditions-pomodoer.html">Terms & Conditions</a></li>
-      </ul>
+      <div class="link-container">
+        <div class="link-box">
+          <a href="privacy-policy-pomodoer.html">Privacy Policy</a>
+          <span>How we collect and use data</span>
+        </div>
+        <div class="link-box">
+          <a href="terms-conditions-pomodoer.html">Terms & Conditions</a>
+          <span>Use of service and obligations</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
